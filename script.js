@@ -17,12 +17,12 @@ function setCard(info = {}) {
 }
 
 let path = {
-    getAll: "http://sb-cats.herokuapp.com/api/2/stiven/show",
-    getOne: "http://sb-cats.herokuapp.com/api/2/stiven/show/",
-    getId: "http://sb-cats.herokuapp.com/api/2/stiven/ids",
-    add: "http://sb-cats.herokuapp.com/api/2/stiven/add",
-    upd: "http://sb-cats.herokuapp.com/api/2/stiven/update/",
-    del: "http://sb-cats.herokuapp.com/api/2/stivenol/delete/"
+    getAll: "https://sb-cats.herokuapp.com/api/2/stiven/show",
+    getOne: "https://sb-cats.herokuapp.com/api/2/stiven/show/",
+    getId: "https://sb-cats.herokuapp.com/api/2/stiven/ids",
+    add: "https://sb-cats.herokuapp.com/api/2/stiven/add",
+    upd: "https://sb-cats.herokuapp.com/api/2/stiven/update/",
+    del: "https://sb-cats.herokuapp.com/api/2/stivenol/delete/"
 }
 let cats = storage.getItem("cats");
 if (!cats) {

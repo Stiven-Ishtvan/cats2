@@ -59,7 +59,7 @@ const acceptUpd = function(el) {
 }
 
 const updateCat = async function(id, body, parent, fav) {
-    let res = await fetch(`http://sb-cats.herokuapp.com/api/2/stiven/update/${id}`, {
+    let res = await fetch(`https://sb-cats.herokuapp.com/api/2/stiven/update/${id}`, {
         method: "put",
         headers: {
             "Content-Type": "application/json",
@@ -76,7 +76,7 @@ const updateCat = async function(id, body, parent, fav) {
 }
 
 const getCat = async function(id) {
-    let res = await fetch("http://sb-cats.herokuapp.com/api/2/stiven/show/" + id);
+    let res = await fetch("https://sb-cats.herokuapp.com/api/2/stiven/show/" + id);
     let ans = await res.json();
     console.log(ans);
     document.querySelector("main").innerHTML = setContent(ans.data);
