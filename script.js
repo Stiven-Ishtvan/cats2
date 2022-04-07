@@ -9,7 +9,7 @@ function setCard(info = {}) {
         <div class="del">×</div>
         
     `;
-    // <a></a>
+ 
     div.addEventListener("click", function(e) {
         window.location.replace(`cat.html#${info.id}`);
     });
@@ -44,12 +44,6 @@ if (!cats) {
 }
 
 
-/*
-    Если вдруг база обновилась, а данные хронятся в локальном хранилище - их надо очистить (обновить)
-
-    Для этого можно создать кнопку "Загрузить с сервера новые данные"
-*/
-
 let catBlocks = document.querySelectorAll(".cat>.del");
 catBlocks.forEach(name => {
     name.addEventListener("click", function(e) {
@@ -58,13 +52,7 @@ catBlocks.forEach(name => {
         let id = +name.parentElement.id.split("_")[1];
         console.log(id);
         let obj = JSON.parse(cats);
-        // Дано: массив с котами
-        //       id кота
-
-        /*
-            fetch("", {method: DELETE})
-        */
-
+  
         let index = obj.findIndex((el, i) => el.id === id);
         obj.splice(index, 1);
         console.log(obj);
