@@ -10,7 +10,7 @@ body {
     background-image: url(img/bg.jpg);
     background-repeat: no-repeat;
     background-position: right 35% bottom -15%;
-    width: 100%;
+    background-size: 100%;
     
 }
 
