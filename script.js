@@ -22,7 +22,7 @@ let path = {
     getId: "https://sb-cats.herokuapp.com/api/2/stiven/ids",
     add: "https://sb-cats.herokuapp.com/api/2/stiven/add",
     upd: "https://sb-cats.herokuapp.com/api/2/stiven/update/",
-    del: "https://sb-cats.herokuapp.com/api/2/stivenol/delete/"
+    del: "https://sb-cats.herokuapp.com/api/2/stiven/delete/"
 }
 let cats = storage.getItem("cats");
 if (!cats) {
